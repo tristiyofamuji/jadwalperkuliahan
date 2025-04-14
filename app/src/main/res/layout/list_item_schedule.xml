@@ -37,6 +37,7 @@
         android:id="@+id/btnAbsen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#FFB700"
         android:text="Absen" />
 
 </LinearLayout>
