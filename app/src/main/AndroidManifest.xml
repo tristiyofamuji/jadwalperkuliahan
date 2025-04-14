@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jadwalperkuliahan">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/unaic"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/unaic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JadwalPerkuliahan"
+        tools:targetApi="31">
+
+        <!-- Splash Activity sebagai activity pertama -->
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- LoginActivity -->
+        <activity android:name=".LoginActivity"
+            android:label="Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true" />
+
+        <!-- MainActivity -->
+        <activity android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+</manifest>

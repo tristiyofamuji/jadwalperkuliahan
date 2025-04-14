@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#ffffff"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absen Kuliah"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Pemisahan setiap detail -->
+    <TextView
+        android:id="@+id/tvSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mata Kuliah: "
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tvLecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dosen: "
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jadwal: "
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:lineSpacingExtra="4dp"/>
+
+    <!-- Tombol Konfirmasi dan Batal dalam satu baris -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Konfirmasi"
+            android:layout_marginEnd="8dp"
+            android:background="#4CAF50"
+            android:textColor="#ffffff"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Batal"
+            android:layout_marginStart="8dp"
+            android:background="#FF9800"
+            android:textColor="#ffffff"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
